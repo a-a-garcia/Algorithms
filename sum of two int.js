@@ -34,3 +34,4 @@ function main() {
 
 console.log(solveMeFirst(2,3));
 console.log(solveMeFirst(100, 1000));
+//expected: 5, 1100. logged: 5, 1100.
