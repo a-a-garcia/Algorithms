@@ -79,4 +79,8 @@ let arr = [2, 3, 5, 8, 9, 10, 11];
 let valueDesired = 17;
 let arrSize = arr.length;
 
+let arr2 = [10, 23, 43, 59, 66, 1000];
+let valueDesired2 = 123;
+
 console.log(isPairSum(arr, arrSize, valueDesired));
+console.log(isPairSum(arr2, arrSize, valueDesired2));
