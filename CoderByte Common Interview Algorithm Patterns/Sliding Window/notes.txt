@@ -1,0 +1,6 @@
+In many problems involving an array or linked list, we're often asked to calculate something among subarrays of a given size.
+
+Often these subarrays overlap, which allows us to optimize our algorithm and not recompute the overlapping sections.
+
+We can use a SLIDING WINDOW to discern what might be overlapping between subarrays vs what is a new element to be computed.
+
