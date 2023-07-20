@@ -10,11 +10,14 @@
 
 
 def to_jaden_case(string):
-    jaden_case_string = list(string)
-    for i in range(len(jaden_case_string)):
-        if jaden_case_string[i] == " ":
-            jaden_case_string[i + 1] = jaden_case_string[i + 1].upper()
-    return "".join(jaden_case_string)
+    if not string.strip():
+        return string
+
+    words = string.split()
+    jaden_case_words = [word.capitalize() for word in words]
+    jaden_case_string = " ".join(jaden_case_words)
+
+    return jaden_case_string
 
 
 print(to_jaden_case("How can mirrors be real if our eyes aren't real"))
