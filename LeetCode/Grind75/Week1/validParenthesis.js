@@ -26,9 +26,27 @@
 // s consists of parentheses only '()[]{}'.
 
 var isValid = function(s) {
+    let stack = [];
+    const bracketMap = {
+        ')': '(',
+        ']': '[',
+        '}': '{'
+    };
+
     for (let i = 0; i < s.length; i++) {
-        console.log(s[i])
+        const char = s[i];
+
+        if (char === '(' || char === '[' || char === '{') {
+            stack.push(char);
+        } else if (char === ')' || char === ']' || char === '}') {
+            const top = stack.pop();
+            if (top !== bracketMap[char]) {
+                return false; // Mismatched brackets
+            }
+        }
     }
+
+    return stack.length === 0; // Ensure all brackets are closed
 };
 
 isValid(["()[]{}"])

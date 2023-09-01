@@ -30,6 +30,7 @@ var twoSum = function(nums, target) {
 console.log(twoSum([3,3], 6));
 
 //more optimized
+// Input: nums = [2,7,11,15], target = 9
 var twoSum = function(nums, target) {
     // Create a Map to store numbers and their corresponding indices.
     const numToIndex = new Map();
