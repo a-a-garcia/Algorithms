@@ -29,5 +29,28 @@ function findOutlier(integers){
   }
 }
 
+//optimized solution
+function findOutlier(integers) {
+    // Create two arrays to store even and odd numbers
+    const evenNumbers = [];
+    const oddNumbers = [];
+
+    // Iterate through the array and categorize numbers
+    for (let i = 0; i < integers.length; i++) {
+        if (integers[i] % 2 === 0) {
+            evenNumbers.push(integers[i]);
+        } else {
+            oddNumbers.push(integers[i]);
+        }
+        
+        // If we have enough numbers in either array, return the outlier
+        if (evenNumbers.length > 1 && oddNumbers.length === 1) {
+            return oddNumbers[0];
+        } else if (oddNumbers.length > 1 && evenNumbers.length === 1) {
+            return evenNumbers[0];
+        }
+    }
+}
+
 console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]))
 console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]))
