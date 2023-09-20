@@ -1,10 +1,6 @@
 // You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']). You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
 
 function isValidWalk(walk) {
-    //insert brilliant code here
-    // create an object that contains the {N:S, E:W} opposite directions
-    // we know that once you get half way through the route, to return, you need to take the opposite directions to get back. 
-    // split the array, loop over it, check if the second half of the array has the opposite directions.
     const oppositeDirections = {
         'n' : 's',
         'e' : 'w',
@@ -13,20 +9,19 @@ function isValidWalk(walk) {
     }
 
     if (walk.length !== 10) {
-        return false
+        return false;
     } else {
-        const firstHalf = walk.slice(5)
-        const secondHalf = walk.slice(0, 5)
-        
+        const firstHalf = walk.slice(0, 5); // Renamed for clarity
+        const secondHalf = walk.slice(5);
+
         for (let i = 0; i < firstHalf.length; i++) {
-            if (oppositeDirections[firstHalf[i]] !== secondHalf[firstHalf.length - 1 - i]) {
-                return false
+            if (oppositeDirections[firstHalf[i]] !== secondHalf[4 - i]) { // Adjusted index
+                return false;
             }
         }
-        return true
+        return true;
     }
 }
-
 // function isValidWalk(walk) {
 //     const oppositeDirections = {
 //         'n' : 's',
