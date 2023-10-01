@@ -38,7 +38,7 @@ var reverseWords = function(s) {
 // if we are at the last word, then we just do that logic, if we're not, then we do that logic but add a space to account for spacing.
 
 //time complexity O(n)
-//space complexity O(n) - not creating any new variables.
+//space complexity O(n) 
 
 // a more consise & optimized solution
 // var reverseWords = function(s) {
