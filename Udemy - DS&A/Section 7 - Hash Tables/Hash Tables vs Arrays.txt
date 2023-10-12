@@ -1,0 +1,9 @@
+Hash Tables are good when you want quick access to certain values. 
+
+Hash Tables are placed all over the place in memory, whereas Arrays are stored next to each other in memory.
+
+Objects have O(1) for search, insert (collision can occur, but it's not particularly common), lookup, delete.
+
+Arrays have O(n) for search, insert, delete.
+
+Arrays, great for ordered collections, objects are great for its key value pairs.

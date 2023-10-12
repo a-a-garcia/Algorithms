@@ -1,0 +1,10 @@
+
+Arrays
+ :)
+* Fast look ups - WHEN you know what index to look up
+* Fast push/pop - from beginning or end only
+* Ordered - the items in an array are stored close to each other in memory
+
+ :(
+* Slow inserts/deletes, from anywhere except the begining or end, because we must shift all the elements
+* If using static arrays, they are fixed size, and their storage must be pre-defined. (most languages have dynamic arrays, however)

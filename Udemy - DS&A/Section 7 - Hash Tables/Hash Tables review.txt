@@ -1,0 +1,14 @@
+Probably the most common interview questions involve hash tables.
+
+Hash Tables
+ :)
+* Fast look ups
+* Fast inserts
+* Flexible Keys - Sets - have no values, Maps - keys are ordered and can be more than just strings or symbols.
+* improve time complexity - usually the answer to improve Time Complexity. avoids nested loops, which we usually want to do. fast access O(1). trade off - more memory O(n)
+
+ :(
+* Unordered
+* Slow key iteration - if you want to grab all the keys from the hash table, you have to go throught the entire memory space, because values are stored randomly in memory.
+
+*If you expect many collisions, linked lists are an answer.

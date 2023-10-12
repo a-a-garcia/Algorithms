@@ -1,0 +1,28 @@
+prepend O(1) (add to beg)
+append O(1) add to end
+lookup O(n)
+insert O(n) (in worst case)
+delete O(n) (in worst case)
+
+// Traversal & iteration - similar, but we traverse in linked lists because we don't know when the linked list will end.
+
+Advantages of linked lists?
+1. Loose structure. Easily insert in middle of list because of pointers. Vs arrays, which have O(n)
+
+4. there is an aggregate cost to dynamic arrays of O(n) if we have to keep doubling up memory.
+
+2. deleting is faster!
+
+3. there is some sort of order in linked lists, vs hash tables that aren't ordered. sorted data - each node points to another
+
+
+
+Disadvantages?
+
+1. Cacheing faster with arrays - most computers have caching systems that make reading from sequential memory faster than unsorted memory. array items are always next to each other in memory. vs hash tables and linked lists.
+
+2. traversing is usually slower than iterating over an array! even though both typically O(n)
+
+
+
+3. Inserting is faster though.
