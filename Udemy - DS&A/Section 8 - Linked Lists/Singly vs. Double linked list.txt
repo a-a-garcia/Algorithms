@@ -1,0 +1,36 @@
+When to use one over the other?
+
+Singly -
+
+Pros
+*Simple implementation
+*Less memory
+    -it's a bit faster because of this with inserts, deletes
+
+Cons
+*Cannot be traversed in reverse
+    -meaning. if you ever lose reference to this.head node, the data may be lost
+
+In conclusion...
+
+Appropriate to use when you have less memory resource.
+And you main goal is fast insetion + deletion. You don't have much searching to do.
+
+Doubly -
+
+Pros
+*Can be traversed from the front or back.
+*If you need to delete a previous node, you don't need to traverse from the head node.
+
+Cons
+*Fairly complex
+*more memory and storage cost.
+* additional operations when inserting and deleting to update prev node
+
+In conclusion...
+
+Appropriate when you don't have limitation on memory resource
+When you want good operation for searching for elements - searching forwards and backwards.
+
+IN INTERVIEWS TYPICALLY GOING TO SEE SINGLY LINKED LISTS
+may be asked theoretical or broad question about how singly and doubly are different.

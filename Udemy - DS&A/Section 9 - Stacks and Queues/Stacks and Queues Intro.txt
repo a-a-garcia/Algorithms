@@ -1,0 +1,13 @@
+Stacks and Queues are very similar. They can be implemented in similar ways.
+
+The main difference is how items get removed.
+
+They are linear data structures - "high level".
+
+Meaning they allow you to traverse data elements sequentially.
+
+In Stacks and Queues, you mainly use them to run commands like push, peak, pop. Dealing with data at the end or the beginning.
+
+Why even use them???????????????
+
+They are used because you may not need all of the functionality of an array, a linked list, etc. Sometimes you only want limited functionality - designing the right tool for the job so to speak! 

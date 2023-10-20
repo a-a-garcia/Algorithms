@@ -1,0 +1,27 @@
+Linked Lists do not come prebuilt in many languages like JavaScript, but are in some like JavaScript
+
+and that's because Linked Lists are "low level data structures".
+
+Used in many other data structures, like stacks and queues.
+
+It's fundamental! Very popular question, very useful in computer science.
+
+LINKED LISTS
+
+:)
+*Fast Insertion
+*Fast Deletion
+*Ordered
+*Flexible Size
+--Excessive overhead memory cost in arrays if dataset is growing,as array and entire contents have to be copied over and over, doubling up the space
+
+:(
+*Slow Lookups - have to traverse through the list if looking for something
+*More Memory
+
+Linked lists are common structures in file systems, browser history
+
+Takes care of collision that can occur in hash tables, since if a collision occurs, one node can just point to the next instead of the data overwriting.
+
+
+
