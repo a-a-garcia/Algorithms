@@ -1,0 +1,24 @@
+Think of Queues as a line. (to a rollercoaster, restaurant, etc)
+
+The first person in line gets to go first, then the next, and so on.
+
+opposite of stacks in that...
+
+FIFO - First In, First Out
+
+Why are they useful?
+
+1) Waitlist app... for buying concert tix
+
+2) Restaurant app - for your place in line
+
+3) Uber, Lyft, rider priority
+
+4) Printer - whoever clicks print first gets their printout first.
+
+LOOKUP - O(n) - usually don't do
+ENQUEUE/Push O(1) - add to que
+DEQUEUE/Pop O(1) - unlike pop though, this takes out the FIRST person in line, not the last.
+PEEK O(1) - Whats the first item thats going to come out?
+
+You can use an array over a queue, but it's not advised because the unshift/shift costs of an array are O(n) due to shifting all corresponding indexes vs the enqueue/dequeue costs of O(1)

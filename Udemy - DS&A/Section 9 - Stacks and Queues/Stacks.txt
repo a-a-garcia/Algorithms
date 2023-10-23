@@ -1,0 +1,25 @@
+You can think of "Stacks" as plates.
+
+We have one piece of data, then another piece of data that "stacks" on top, and so on...
+
+You can only touch the top plate! If you want the bottom plate, you have to grab all the plates from the top, down.
+
+LIFO - Last In, First Out.
+
+Why/When is this useful?
+
+1) When you need to know the very last value added
+
+2) important in language specific engines. Stack overflow
+
+3) JavaScript depends on stacks!
+Modeled with stack architecture in mind
+
+4) Browser history. When you go back and forth between sites, back button forward button - uses stacks
+
+5) undo and redo buttons - stacks
+
+LOOKUP O(n) - you usually don't want to traverse through a whole stack - expensive operation
+POP O(1)
+PUSH O(1)
+PEEK O(1) - view the topmost plate

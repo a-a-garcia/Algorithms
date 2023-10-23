@@ -1,0 +1,114 @@
+WHAT IS A PROGRAM?
+
+A program must
+-- allocate memory (to create variables, etc)
+-- parse and execute (read and run commands)
+
+Each browser has a JavaScript engine.
+
+The JavaScript engine takes the JavaScript developers write and turns it into machine executable instructors for the browser.
+
+The engine consists of 2 parts
+
+1 -- Memory Heap, where memory allocation happens
+2 -- Call Stack, where code is read and executed
+
+const a = 1;
+const b = 10;
+const c = 100;
+
+is memory allocation in the memory heap!
+
+-----
+
+Memory Leaks happen when you have unused memory (defining variables you don't use)
+
+Why global variables are bad.
+
+Why is that bad? the memory heap gets filled up, and eventually browser won't work.
+
+------
+
+Call Stack - what reads and executes our scripts
+
+console.log('1');
+console.log('2');
+console.log('3');
+
+If you run this code, you'll get 
+
+1
+2
+3
+
+The first line is read, console.log('1');, then that gets put into the call stack.
+
+Then it runs, and pops it off the stack. Then it adds the next line to the call stack console.log('2'); ... etc.
+
+Another ex..
+
+const one = () => {
+    const two = () => {
+        console.log('4')
+    }
+    two()
+}
+
+In the console, you'll get
+
+4
+
+what happened in the call stack?
+
+1. console.log('4') 
+2. two() is run. 
+3. one() is run. 
+
+-----
+
+"JavaScript is a single threaded language that can be non-blocking"
+
+"Single threaded" means there is only one call stack, first in, last out whatever's at the top of the call stack is run first, and so on.
+
+There are "multi-threaded" call stack languages.
+
+Why was JS designed to be single threaded?
+running code on a single thread is easier, only one call stack to worry about. No need to worry about deadlocks.
+
+This is also what synchronous programming is. Each line doesn't execute until the previous one finishes.
+
+What does stack overflow mean?
+
+When the call stack is overflowing (similarly to the memory heap overflowing, leading to memory leaks)
+
+this recursive function is the easiest example of stack overflow.
+
+function foo() {
+    foo()
+}
+
+-----
+
+"Non-blocking" refers to the fact that JavaScript can have asynchronicity
+
+setTimeout(() => {
+    console.log('2')
+}, 2000)
+
+is a very simple example. 
+
+-----
+
+In order for JavaScript to run, with its memory heap and call stack, we need more. We need the JavaScript runtime environment (included in the browser)
+
+it has 
+
+Web APIs
+
+the DOM (document object model)
+AJAX (XMLHttpRequest)
+Timeout (setTimeout)
+
+Event Loop <- Callback Queue (onClick, onLoad, onDone)
+
+an easy analogy with synchronous vs asychronous is calling (synchronous) vs texting (asychronous)
