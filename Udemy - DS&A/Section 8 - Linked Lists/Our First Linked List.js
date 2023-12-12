@@ -75,21 +75,18 @@ class LinkedList {
         }
         return currentNode; // gives you the node at the index.
     }
-
+ 
     insert(index, value) {
         // 1 - check your parameters
 
-        if (index >= this.length) { //if you're trying to enter something beyond the bounds of the length
+        if (index >= this.length) { //if you're trying to enter something beyond the bounds of the length, just add it to the end.
             return this.append(value)
         }
 
 
-        const newNode = {
-            value : value,
-            next : null
-        }
+        const newNode = new Node(value)
 
-        //get the item before the index we want to insert at
+        //get the item BEFORE the index we want to insert at
         const leader = this.traverseToIndex(index - 1) // new method, getting the index of the number that goes before the one we're inserting.
 
         //the item at the actual index, temp holding it basically.
@@ -98,8 +95,13 @@ class LinkedList {
         //update leader.next to be the new node
         leader.next = newNode;
 
-        //update the new node to be that previous value, held in temp variable.
+        // [... leader -> newNode ... ]
+        // holdingPointer (floating around in space)
+
+        //update the node AFTER the new node to be that previous value, held in temp variable.
         newNode.next = holdingPointer;
+
+        // [... leader -> newNode -> holdingPointer ... ]
 
         this.length++;
 
@@ -141,8 +143,9 @@ class LinkedList {
         } 
         
         let first = this.head; //reference to head
-        this.tail = this.head; // the last item becomes the first item.
-        let second = first.next; //reference to item after head
+        this.tail = this.head; // the last node becomes the first node.
+        let second = first.next; //reference to node after head
+
         while (second) { // as long as second exists...
             const temp = second.next //technically third, but it will change so temp is a better name.
             second.next = first;
@@ -152,10 +155,44 @@ class LinkedList {
 
         this.head.next = null
         this.head = first; // by the time loop finishes, first becomes the last item, and second becomes null.
+        
         return this.printList();
     }
 
 }
+
+//Reverse loop logic - 
+//  1 -> 2 -> 3 -> 4 -> null
+
+// first iteration :
+// temp is 3 (the node after second)
+// second.next becomes 1 (pointing backward).
+// first is updated to 2
+// second is updated to temp (3)
+
+// 1 -> 2 <- 3    4 -> null
+
+// second iteration:
+// temp is 4 (the node after second)
+// second.next becomes 2 (pointing backward).
+// first is updated to 3
+// second is updated to temp (4)
+
+// 1 -> 2 <- 3 <- 4    null
+
+// third iteration:
+// temp is null (the node after second)
+// second.next becomes 3 (pointing backward).
+// first is updated to 4
+// second is updated to temp (null)
+
+// 1 <- 2 <- 3 <- 4    null
+
+// loop complete
+// this.head is updated to point to the new head of the list
+// tail is also updated
+
+// 4 -> 3 -> 2 -> 1 -> null
 
 const myRealLinkedList = new LinkedList(10) //creates first part of linked list, value: 10
 // console.log(myRealLinkedList)

@@ -39,6 +39,17 @@ class HashTable {
         const currentBucket = this.data[address];
         console.log(currentBucket)
     }
+
+    keys() {
+        const keysArray = [];
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i]) {
+                console.log(this.data[i][0][0])
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+        return keysArray
+    }
 }
 
 const myHashTable = new HashTable(2);

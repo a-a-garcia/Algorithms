@@ -1,0 +1,17 @@
+Trees are a data structure that are hierarchal, unlike linked lists that are linear.
+
+Trees can have 0 or more child nodes.
+
+Trees usually start with a single root node or parent node.
+
+Every child only has one parent.
+
+Biggest most simplest example is the DOM.
+
+Facebook Comments, Family Trees, Old school computer chess, abstract syntax tree are all trees.
+
+We use the same principle as we do as linked lists. We have nodes with relationships.
+
+Linked lists are technically a type of tree - only there's just one single path.
+
+A node can only point to a child. Nodes don't really have to reference their parent.

@@ -36,7 +36,7 @@ class Stack {
         if (!this.top) {
             return null;
         }
-        if (this.length === 1) { //if only one item
+        if (this.top === this.bottom) { //if there's just one node left in the stack...
             this.bottom = null;
         }
         const temp = this.top; //if we don't need that node anymore, we don't need this line

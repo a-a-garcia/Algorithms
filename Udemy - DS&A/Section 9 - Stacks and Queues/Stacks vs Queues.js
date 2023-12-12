@@ -11,7 +11,7 @@
 
 //Stacks can be built in either Arrays or Linked Lists - depends on what you prefer + what your priorities are.
 
-//Arrays allow cache locality, which makes them technically faster when accessing its item in memory because they are next to each other. However, arrrays are either fixed or dynamic - dynamic arrays will double up memory automatically as it grows.
+//Arrays allow cache locality, which makes them technically faster when accessing its items in memory because they are next to each other. However, arrrays are either fixed or dynamic - dynamic arrays will double up memory automatically as it grows.
 
 //Linked Lists are stored randomly in memory. And they have an extra memory cost because you have to hold onto pointers. But they have dynamic memory - We can keep adding things to the list and possibly incur less data cost vs arrays which will double up periodically as we add more data
 

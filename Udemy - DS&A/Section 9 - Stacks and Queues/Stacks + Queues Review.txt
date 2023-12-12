@@ -1,0 +1,9 @@
+Stacks + Queues : 
+
+:) 
+* Fast Operations
+* Fast Peek
+* Ordered
+
+:(
+* Slow Lookup

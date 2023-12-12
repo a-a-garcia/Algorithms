@@ -37,7 +37,7 @@ class DoublyLinkedList {
             next: null, // because the linked list starts out with only one value.
             prev: null,
         }
-        this.tail = this.head //because this linked list only has one value in it.
+        this.tail = this.head //because th linked list starts with only one value in it.
         this.length = 1; // starts out at one
     }
 
@@ -90,32 +90,37 @@ class DoublyLinkedList {
         }
 
 
-        const newNode = {
-            value : value,
-            next : null
-        }
+        const newNode = new Node
 
         //get the item before the index we want to insert at
         const leader = this.traverseToIndex(index - 1) // new method, getting the index of the number that goes before the one we're inserting.
-
-        //the item at the actual index, temp holding it basically.
         
         //FOR DOUBLY..
         // we need to grab the leader AND the follower.
         //if we wanted to add 99 between 10 and 5 [1,10,5,16],
-        //we need a reference to 10, the leader, and 5, the follower.
+        //we need a reference to 10 - the leader, and 5 - the follower.
 
         const follower = leader.next // follower will be 5
 
         //update leader.next to be the new node
         leader.next = newNode; //get the leader to point to the new node.
 
-        //update the new node to be that previous value, held in temp variable.
-        newNode.next = follower; //going to equal 5
+        // [... leader  -> newNode ...]
+        // follower (floating around in space)
 
+        //update the node after the new node to be that previous value, held in temp variable.
+        newNode.next = follower; //that is, the 5.
+
+        // [... leader  -> newNode -> follower ...]
+
+        //update 
         newNode.prev = leader // that is, the 10.
 
-        follower.prev = newNode //the 5 has a prev value that points to our newNode
+         // [... leader  <-> newNode -> follower ...]
+
+        follower.prev = newNode //the 5 will now have a prev value that points to our newNode
+
+        // [... leader  <-> newNode <-> follower ...]
 
         this.length++;
 
@@ -142,6 +147,8 @@ class DoublyLinkedList {
         //update the pointers of the nodes before and after the node being removed
         nodeToRemove.prev.next = nodeToRemove.next;
         nodeToRemove.next.prev = nodeToRemove.prev;
+
+        
 
         this.length--;
     }

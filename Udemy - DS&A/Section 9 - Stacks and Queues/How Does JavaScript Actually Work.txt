@@ -64,6 +64,8 @@ what happened in the call stack?
 2. two() is run. 
 3. one() is run. 
 
+Remember, stacks are LIFO. so 1 is the last plate in the stack. (they will get popped off as they are executed.)
+
 -----
 
 "JavaScript is a single threaded language that can be non-blocking"
@@ -103,12 +105,11 @@ In order for JavaScript to run, with its memory heap and call stack, we need mor
 
 it has 
 
-Web APIs
+* Web APIs
+    *the DOM (document object model)
+    *AJAX (XMLHttpRequest)
+    *Timeout (setTimeout)
 
-the DOM (document object model)
-AJAX (XMLHttpRequest)
-Timeout (setTimeout)
-
-Event Loop <- Callback Queue (onClick, onLoad, onDone)
+* Event Loop <- Callback Queue (onClick, onLoad, onDone)
 
 an easy analogy with synchronous vs asychronous is calling (synchronous) vs texting (asychronous)
