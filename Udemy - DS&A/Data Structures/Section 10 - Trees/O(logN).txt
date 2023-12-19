@@ -1,0 +1,36 @@
+**In a perfectly balanced binary tree**
+Level 0: (the very top level of a binary tree): 2^0 = 1; that is, we have 1 node.
+Level 1: 2^1 = 2;
+Level 2: 2^2 = 4;
+Level 3: 2^3 = 8;
+
+So what does O(logN) mean?
+If we imagine level 3 is data in an array... that means we have 8 places to iterate through. 8 nodes to check.
+
+We can find the number of nodes in a tree by doing 2^h - 1. (h stands for height, or levels). But why - 1?
+
+Well if we have a level 3 binary tree it should have 7 nodes. 2^3 - 1 = 7 nodes.
+
+if we simplify 2^3 - 1 = 7, log nodes = steps/height.
+
+but what is log?
+
+log 100 = 2 ...
+
+because, log ^ 2 = 100
+
+To summarize... log(n) simply means that based on the height, the maximum number of decisions (let's say we're looking for a certain node) that we're going to take, is going to be log(n).
+
+Think of it like this -
+
+We start at the root node. If the root node is not the node we're looking at, we can go either left or right. If we go left and that node is also the node we're not looking for then we can again go left or right. if we go right and we find the one we're looking for, then we know we have at max 3 steps, instead of visiting every single node.
+
+When you see O(logN) all it's really saying is that the choice of the next element on which to perform some sort of action is one of several possibilities, and only one needs to be chosen. We don't need to check both.
+
+Think about a phonebook. You don't check every single person in a phonebook right? You start with the first letter of a person's name! Divide and Conquer!
+
+You only need to explore a subset of each section until you find what you need.
+
+O(logN) is just like looking through a phone book.
+
+It's faster than O(n), because we don't need to check every single element!

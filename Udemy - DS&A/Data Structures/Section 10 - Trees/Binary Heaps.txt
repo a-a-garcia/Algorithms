@@ -1,0 +1,42 @@
+Two other common types of Trees:
+
+Heaps & Tries:
+
+Binary Heaps - Only two children to a node.
+
+:)
+Better than O(n)
+Priority (insertion is done in order.)
+Flexible Size
+Fast Insert
+
+:(
+Slow Lookup
+
+There's two types of heaps - Max heap - every child value is LESS than the parent's value.
+
+And min heap - every child's value is MORE than the parent's value
+
+It's like a pyramind of values, where the values cascade downwards (or upwards)
+
+Heaps can be used in any algorithm where ordering is important. It's commonly used when it comes to priority ques.
+
+With arrays we had random access via indexes, and with linked lists we could change things dynamically, but lookup is O(n).
+
+Heaps are different. It's not O(1) hashmaps/arrays. It's O(n) lookups because it's less ordered. left and right can be any number as long as it's less than the top one.
+
+Why'd we ever want to use one? 
+
+They're great at doing comparative operations.
+
+IE I want people that have a value over 33. In that case you can grab a certain area/level of a tree and not have to traverse any level beyond that.
+
+Heaps are used a lot in data storage, priority queues, sorting algorithms.
+
+Nodes "bubble up" in a heap. They are added as leaves but then they travel upwards(assuming the heap is a max heap) until the node is in a proper spot. So inserts can still take log(n) (in worst case).
+
+NOTE:
+
+"Memory Heap" is NOT the same thing as Binary Heap/Heap data structure.
+
+Memory Heap refers to one region in our memory inside something like the JavaScript runtime engine where we can store arbitrary data. (Languages like C also have this)

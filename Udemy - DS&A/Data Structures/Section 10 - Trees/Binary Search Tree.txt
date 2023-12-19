@@ -1,0 +1,15 @@
+Binary Search Trees are the most common type of Binary Trees
+
+Lookup O(log N)
+Insert O(log N)
+Delete O(log N)
+
+Why would this be better than hash table?
+
+BSTs preserve relationships!
+
+Think of the folders on your computer. You want them to have relationships - parent foler and child folder, and grandchild folder etc.
+
+BST rules
+1) All nodes to the right of the current node must be GREATER than the current node, and all nodes to the left of the current node must be LESSER than the current node.
+2) A node can only have up to two children.

@@ -1,0 +1,9 @@
+In computer science - a graph is a set of values that are related in a pariwise fashion.
+
+Each item is called a Node or a vertex.
+
+Each node is connected via an edge (lines).
+
+Graphs can represent networks, recommendation engines, google maps.
+
+Linked lists are a type of tree, and trees are a type of graph!

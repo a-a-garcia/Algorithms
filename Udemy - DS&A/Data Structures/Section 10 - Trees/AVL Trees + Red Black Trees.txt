@@ -1,0 +1,15 @@
+Usually in production, you want a balanced search tree.
+
+There are two stypes of search trees that you'd most likely use in production
+
+-AVL Tree
+
+-Red Black Tree 
+
+These trees automatically rebalance themselves.
+
+We don't need to code themselves, usually there are libraries that implement them.
+
+So how does something like an AVL tree work?
+
+It basically restructures the tree if a tree would become unbalanced when adding a node, by updating left and/or right references.

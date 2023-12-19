@@ -1,0 +1,15 @@
+Binary Heaps, again, have no left to right order. It doesn't matter what is left or right to the current node, as long as it's less than. Parent greater than children
+
+The beauty of binary heaps is that they take the least amount of space possible because it's always left to right insertion.
+
+They don't need to be rebalanced.
+
+Because they do left to right insertion, they preserve the order of insertion. 
+
+You can also implement binary heaps using arrays.
+
+Priority Queue is DIFFERENT from a standard Queue. Standard queue is FIFO.
+
+Priority Queue is where each element has a priority. Elements with higher priority are served before elements with lower priorities.
+
+Examples - emergency room, VIPs, airplane boarding (captain gets on first)

@@ -1,0 +1,11 @@
+An unbalanced BST occurs when a significant amount of nodes are added to one side of the BST, leading the tree to look like a linked list, where we're just looping through every single node.
+
+In an unbalanced BST, lookup, insert and delete are all O(n) liked a linked list.
+
+Possible interview question!
+
+Ideally, we want to balance our binary trees so we can avoid this, otherwise just use a linked list.
+
+How do you balance a tree? 
+
+Algorithms - AVL trees, red black trees... they are built in most programming languages and they won't usually ask you to balance a binary search tree in interviews. Mostly they may ask you to talk about the existence of them and their tradeoffs.

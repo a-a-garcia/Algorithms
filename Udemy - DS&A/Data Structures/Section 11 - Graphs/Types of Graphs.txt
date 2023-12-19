@@ -1,0 +1,26 @@
+Directed vs Undirected Graphs
+
+Describe traffic flow - in which movement is not bidirectional.
+
+Directed graphs - Directions in which data flows is defined. Twitter. People can follow you. But you don't automatically follow them.
+
+Undirected - no definition of direction. Think of a highway between two cities. You can go back and forth. Facebook. When you're connected to a friend, a friend is also connected to you.
+
+___
+
+Weighted vs Unweighted
+
+Unweighted - has no information in the edges (connections)
+
+Weighted - has information in the edges (connections). google maps, what's the fastest way to get to your destination
+
+___
+
+Cyclic vs Acyclic
+
+Cyclic - When vertices are connected (in a circular fashion). When you can go from one node to another to another and back to the original node... Overlap with weighted graphs commonly.
+
+Acyclic - You can't do that.
+
+___
+

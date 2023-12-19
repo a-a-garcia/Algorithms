@@ -1,0 +1,17 @@
+A trie is a specialized tree used in searching, most often with text.
+
+In most cases, it outperforms most other data structures.
+
+It allows you to know if a word or part of a word exists in a body of text.
+
+Usually has an empty root node.
+
+From there, letters are added. It's not a binary tree it can have multiple children.
+
+Another word for a trie is a prefix tree. You can think of it as autocompletion.
+
+
+time complexity
+O(length of the word)
+
+Space complexity

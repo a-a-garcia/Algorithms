@@ -1,0 +1,23 @@
+BSTs
+
+:)
+-Better than O(n) 
+-Ordered
+-Flexible Size
+
+:(
+-No O(1) Operations
+
+Who wins vs Arrays ?
+    - Lookup ? BSTs! O(logN). O(n) for Arr
+    - Insert ? BSTs! Unless adding to end or beginning, otherwise must shift all indexes
+    - Delete ? BSTs! Unless adding to end or beginning, otherwise must shift all indexes
+
+Who wins vs Hash Maps ?
+    - Lookup ? While Hashmaps have O(1), BSTs have sorted data (parent/child relationships)
+    - Insert ? While Hashmaps have O(1), BSTs have sorted data (parent/child relationships)
+    - Delete ? While Hashmaps have O(1), BSTs have sorted data (parent/child relationships)
+
+In summary, BSTs aren't the fastest for anything, but they aren't the slowest either.
+
+On average, arrays and objects will be faster, but there are certain conditions where they do outperform.
