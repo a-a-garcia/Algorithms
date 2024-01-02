@@ -1,0 +1,27 @@
+I recommend you read through this article ( https://stackoverflow.blog/2020/11/25/how-to-write-an-effective-developer-resume-advice-from-a-hiring-manager/ )which gives some additional advice on how to make sure your resume send the right message and it is affective as possible.
+
+
+
+
+If you are looking for more inspiration on what successful resumes look like for engineers, you can use this link to see some samples. https://www.cakeresume.com/Engineering-resume-samples
+
+
+
+
+Finally, here are three more free resume templates that I have discovered that will really help you with your resume:
+
+
+
+1. https://thisresumedoesnotexist.com
+
+
+
+2. https://docs.rxresu.me/tutorial/create-a-new-resume
+
+
+
+3. https://www.open-resume.com/
+
+
+
+P.S. Although I am personally not a fan, there is a thing called ATS Compliant Resumes. These types of resumes can be read by machines to help recruiters/companies filter through 1000s of resumes. I personally think this is a great way to get lost in the shuffle of 1000s of resumes and not stand out (we will talk about better ways to reach out to companies in later lesson), but here are some ATS compliant templates you can use if you like.

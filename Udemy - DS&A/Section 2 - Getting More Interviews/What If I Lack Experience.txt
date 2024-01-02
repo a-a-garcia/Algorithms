@@ -1,0 +1,23 @@
+* Have a mentality - apply for jobs that you are underqualified for!
+
+* Think - if you're already comfortable with what they're asking for, how are you going to grow, what are you going to learn?
+
+* Job postings are intentionally written as if they are harder than they really are.
+
+* Is this job going to be tough? Good! 
+
+* Experience doesn't come from just past jobs
+    * GitHub - just start making commits. contribute to open source projects. Zero To Mastery Repositories have some you can work on.
+    * Website - Important for front end / full stack. Some tricks...
+        * Creative Tim... templates
+    * 1 ~ 2 Big Projects
+        * 1 - Pup Pathways
+        * 2 - GameHarmony
+        * 3 - PipeHubb
+        * 4 - E-commerce App(?)
+    * Blog - Medium.com - what if you wrote a blogpost about a technology a company is using or technical issue they're facing? 
+        * Talk about projects you're building!
+        * Your GitHub
+        * Open source you're working on
+
+GitHub README tutorial: https://www.youtube.com/watch?v=ktN5tDfQ_g8

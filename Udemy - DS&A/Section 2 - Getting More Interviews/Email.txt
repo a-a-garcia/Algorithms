@@ -1,0 +1,24 @@
+* Applying directly via job board or company website is not the best way...
+
+* Hey $BOB, I saw your presentation at $CONFERENCE last year on youtube. Awesome talk, I loved what you did with $FOO, in particular $COMMENT_PROVING_YOU_KNOW_WHAT_YOU'RE_TALKING_ABOUT. I'm also a $FOO dev. I noticed your company is hiring for $ROLE. I'd love to be apart of your team. Do you have a few minutes to chat on $DAY about what you guys are doing?
+
+Thanks!
+Anthony A. Garcia
+$PUBLIC_PROFILE_LINK(S)
+
+* But who to contact?
+    * Utilize LinkedIn
+    * Find Anyone's Email - hunter.io, email extractor, etc.
+    * Key is to find the gatekeepers - people who have a decision to interview you, or can refer you to someone who has that ability.
+    * Remember, many companies have incentives for employees to refer someone!
+    * Meetups, Hackathons... ask them if the company they work for are hiring...
+    * Referals beat blind applications.
+
+* Thinking outside the box...
+* Instead of sending HR person (head HR, somebody on the dev team) a resume, maybe try sending a personal website (portfolio) why you want to work for that company, and ask for an interview outright
+* Message lead devs, CTO's (smaller companies) that you're interested in working with them. That you're interested to get to where they are professionally. Chat with them. Mindset - Many people love talking about themselves! Always try to ask (do you know anyone I can talk to?)
+* Ask CEO/Engineer Lead what problems they're having, what technologies you are an expert in... ask to solve a real life problem they have - they can keep the work, all you want in return is an interview.
+
+* The point... try to bypass formalities of application process by trying to get an interview right away. Select the jobs you want, personalize your emails, try to avoid sending a resume.
+
+* Cover letters should be directed at someone and personalized. they're emails to reach out to somebody, get referrals.. show how you can help solve their problems.

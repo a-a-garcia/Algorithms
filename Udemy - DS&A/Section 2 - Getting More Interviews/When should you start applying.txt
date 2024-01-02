@@ -1,0 +1,13 @@
+* NOW.
+* Start looking at interviews as a skill! Each one you do will make you better.
+
+* Shift your perspective. A job description is a guideline of what type of work you will be doing, not what type of work have you done in the past.
+
+* But the catch is - you need to have some fundamentals
+    * DS + A.
+    * Have you built projects and can you built something on your own?
+    * Do you have 1-2 projects using the related technologies?
+
+* Hiring devs is about more than technical skills. - Non technical skills.
+
+* "If you never ask, the answer is always no."
