@@ -12,3 +12,14 @@ Hash Tables
 * Slow key iteration - if you want to grab all the keys from the hash table, you have to go throught the entire memory space, because values are stored randomly in memory.
 
 *If you expect many collisions, linked lists are an answer.
+
+Addl notes:
+
+* Linked lists (chaining) are not the only way to address collisions - consider other strategies like open addressing + using secondary hash function
+
+
+* OPEN ADDRESSING + SECONDARY HASH - Looks for the next available space in memory that doesn't have a key/value mapped to it to address a collision. It's typically faster in time and more beneficial in space because there is no traversal involved and no additional data structure (via linked list) needs to be created.
+
+Chaining Pro - Chaining is effective for handling multiple collisions at the same index (high collision rates) and doesn't require continuous memory allocation. Also more simple to implement.
+
+Open Addressing Pro - Open addressing can be more space-efficient and may have faster access times compared to chaining.

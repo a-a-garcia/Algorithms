@@ -1,4 +1,4 @@
-Hash Tables are good when you want quick access to certain values. 
+Hash Tables are good when you want quick access to certain values.
 
 Hash Tables are placed all over the place in memory, whereas Arrays are stored next to each other in memory.
 
@@ -7,3 +7,9 @@ Objects have O(1) for search, insert (collision can occur, but it's not particul
 Arrays have O(n) for search, insert, delete.
 
 Arrays, great for ordered collections, objects are great for its key value pairs.
+
+Hashing Function - 
+
+if you're trying to access 'grapes' inside of a hello object -> hello.grapes...
+
+All you need to know access .grapes, is to send 'grapes' into a hash function, you are generated a hash, and then you know where it is in memory (your machine translates the address space based on the hash)!

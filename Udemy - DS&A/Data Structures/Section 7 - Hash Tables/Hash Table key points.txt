@@ -1,0 +1,18 @@
+1. Explain what a hash table is and how it works.
+Describe the key-value pair structure in a hash table.
+Discuss collision resolution strategies.
+
+A hash table is a data structure that stores data in key value pairs. The value inside easily is accessible via referencing the keys, or if you wanted the keys you could access the data vie methods like Object.keys(). Collisions can occur in hash tables however, because when data is placed within a hash table, it's stored randomly in memory, and sometimes our machines place data we put into a hash table in a place in memory where something already exists. One collision resolution that our machines can do is store the data as a linked list when it encounters a collision.
+
+Open addressing looks for the next available space in memory that doesn't have a key/value mapped to it to address a collision. It's typically faster in time and more beneficial in space because there is no traversal involved and no additional data structure (via linked list) needs to be created.
+
+2. What is a hashing function, and why is it important in a hash table?
+Explain the characteristics of a good hashing function.
+Can you give examples of hashing functions used in real-world scenarios?
+
+A hashing function is simply a function that takes data an encodes it - to access the encoded data, you need a key. It's important in a hash table because without the key(s), you cannot access the values inside of a hash table. A good hashing function should not only hash, but in the context of say, password for example, should also add a "salt". Hashing functions like BCrypt also iterate several times via nested loops (key stretching) - they are intentionally slow. Good hashing functions should slow down potential hackers enough to the point where it would take too much time for them to successfully unhash a password. And as I've already mentioned, passwords are probably the most common uses of hash functions.
+
+3. Collision Resolution:
+
+Describe different collision resolution techniques (e.g., chaining, open addressing).
+Compare and contrast chaining and open addressing.
