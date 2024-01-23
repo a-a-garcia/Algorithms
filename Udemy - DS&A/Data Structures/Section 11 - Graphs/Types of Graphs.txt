@@ -18,9 +18,9 @@ ___
 
 Cyclic vs Acyclic
 
-Cyclic - When vertices are connected (in a circular fashion). When you can go from one node to another to another and back to the original node... Overlap with weighted graphs commonly.
+Cyclic - When all vertices are connected (in a circular fashion), when you can go from one node to another to another and back to the original node... Many weighted graphs are also cyclic.
 
 Acyclic - You can't do that.
 
-___
+
 

@@ -1,0 +1,19 @@
+Recursion isnt technically an algo. It's more a way of thinking.
+
+One of the most popular interview topics.
+
+When you're searching for files on your computer, you can't do it just by looking at one folder. You need to look at your files recursively.
+
+you can ls -R in your terminal and it will list the contents of all the folders.
+
+Recursion is a function that refers to itself inside of the function.
+
+function inception() {
+    inception();
+}
+
+when this run it's going to call itself.
+
+it's great for tasks that have repeated subtasks to do.
+
+DOM traversal, nested objects, are examples of recursion.

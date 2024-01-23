@@ -1,0 +1,10 @@
+You'll get "maximum call stack size exceeded" from browsers like Chrome when it encounters a infinitely calling function. stack overflow!
+
+You can see the call stack in calling debugger in inspect tool in your function.
+
+with a stack overflow function, the call stack just constantly increases.
+
+Why is stack overflow bad?
+
+"The computer needs to allocate memory to remember things. Stack overflow can occur when we have recursion, and there's no way to stop this recursive call"
+

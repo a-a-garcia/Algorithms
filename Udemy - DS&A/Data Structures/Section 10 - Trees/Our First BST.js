@@ -13,10 +13,11 @@ class BinarySearchTree {
 
     insert(value) {
         const newNode = new Node(value)
+        //if there's no root node, then we're gonna make the new node the root node.
         if (this.root === null) {
             this.root = newNode
         } else {
-            let currentNode = this.root; //we're gonna have to traverse this node
+            let currentNode = this.root; //we're gonna have to traverse this node, starting at the root.
             while(true) { //we don't know how long to traverse so we need to use while
                 if (value < currentNode.value) { // is value we're entering less than current node value?
                     //LEFT

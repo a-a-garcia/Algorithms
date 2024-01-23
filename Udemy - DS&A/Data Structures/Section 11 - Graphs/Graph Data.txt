@@ -1,0 +1,25 @@
+Graphs are built on top of other data structures.
+Node with children and different pointers!
+
+3 ways you can think of building graphs..
+
+#1 - Edge list
+const graph = [[0,2], [2,3], [2,1], [1,3]];
+-The nested arrays represent the connections. 0 is connected to 2, 2 is connected to 3.. and so on.
+
+#2 - Adjacent list
+const graph = [[2], [2,3], [0,1,3], [1,2]]
+-The index represent the NODE
+-The values represents the NODE'S NEIGHBORS
+-could be represented as an object
+
+#3 - Adjacent matrix
+const graph = [
+    [0, 0, 1, 0],
+    [0, 0, 1, 1],
+    [1, 1, 0, 1],
+    [0, 1, 1, 0]
+]
+-The index represents the NODE
+-Binary to represent whether a node has a connection to the node at that index (0 being no, 1 being yes)
+-could be represented as an object

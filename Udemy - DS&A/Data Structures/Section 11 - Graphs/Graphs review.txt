@@ -1,0 +1,11 @@
+Pros and cons?
+
+:) 
++ Relationships
+
+:(
+- Scaling is hard, they can get complicated.
+
+big O depends on what tools you use to build the graph.
+
+There are tools such as Neo4J to build really fast graphs
