@@ -1,0 +1,21 @@
+Anything you can do with recursion, CAN be done with a loop.
+
+So why would we ever want to use recursion? Especially if recursion sometimes results in exponential time?
+
+- For some problems, it's easier to write
+
+:)
++ DRY
++ Readable
+
+:(
+- Large Stack 
+- Iterative solutions tend to be more efficient because they don't make these additional function calls.
+
+There's always two options, pros and cons.
+
+One rule you can follow is that use recursion when you are working with data structures whose depth you don't know. (tree data structures)
+
+Tail Code Optimization -
+allows recursions to be called without increasing the call stack.
+there are ways to write recursion to be more efficient

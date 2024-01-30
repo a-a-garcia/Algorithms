@@ -1,0 +1,12 @@
+What's all the fuss with sorting?
+
+sort() is built into a lot of languages.
+
+Sorting isn't a big deal when it comes to smaller data.
+
+BUT
+
+When inputs get larger and larger, it gets more complex. Think Google or Amazon, sorting news articles sorted by time or products sorted by rating.
+
+Custom sorted methods become important. Sorted or pre-processed data is important.
+

@@ -7,3 +7,10 @@ Allow us to perform actions on that data
 DS + A = Programs
 
 Class {} + function() = Programs
+
+SORTING
+DYNAMIC PROGRAMMING
+BFS+DFS(SEARCHING)
+RECURSION
+
+are the 4 most common algorithms (in interviews)

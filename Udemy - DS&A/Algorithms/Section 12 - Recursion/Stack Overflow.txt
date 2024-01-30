@@ -8,3 +8,5 @@ Why is stack overflow bad?
 
 "The computer needs to allocate memory to remember things. Stack overflow can occur when we have recursion, and there's no way to stop this recursive call"
 
+You need a base case to stop stack overflow.
+

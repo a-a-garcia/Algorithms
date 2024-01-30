@@ -1,0 +1,15 @@
+When should we use recursion?
+
+When it gets to complicated problems like traversing or searching through trees or graphs, recursion is really useful and better than iterative. With sorting, recursion is also preferred.
+
+In summary,
+
+Every time you are using a tree, or converting something into a tree, consider recursion.
+
+    These 3 things in a interview question can trigger a recursive solution 
+
+    1. A problem can be divided into a number of subproblems that are smaller instances of the same problem.
+    2. Each instance of the subproblem is identical in nature.
+    3. The solutions of each subproblem can be combined to solve the problem at hand.
+
+Divide and conquer using recursion.

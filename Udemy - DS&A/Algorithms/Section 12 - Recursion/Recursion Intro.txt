@@ -6,6 +6,8 @@ When you're searching for files on your computer, you can't do it just by lookin
 
 you can ls -R in your terminal and it will list the contents of all the folders.
 
+-R stands for 'recursively'
+
 Recursion is a function that refers to itself inside of the function.
 
 function inception() {

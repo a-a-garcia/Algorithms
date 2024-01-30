@@ -1,0 +1,8 @@
+You most likely will never write your own sort function in your career.
+
+You still need to know how they work because 1) you'll be asked in an interview most likely, and 2) makes you a better engineer
+
+visuals to see sorting algorithms with different inputs
+
+https://www.toptal.com/developers/sorting-algorithms
+
